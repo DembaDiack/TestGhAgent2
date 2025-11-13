@@ -1,0 +1,27 @@
+{
+  "name": "udemy-scraper",
+  "version": "1.0.0",
+  "description": "CLI tool to scrape Udemy course curriculum",
+  "main": "dist/cli.js",
+  "bin": {
+    "udemy-scraper": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/cli.js",
+    "dev": "ts-node src/cli.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["udemy", "scraper", "course", "curriculum"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/cheerio": "^0.22.35",
+    "@types/node": "^24.10.1",
+    "axios": "^1.13.2",
+    "cheerio": "^1.1.2",
+    "commander": "^14.0.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
