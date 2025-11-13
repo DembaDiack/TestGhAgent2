@@ -11,11 +11,19 @@ npm run build
 
 ## Usage
 
+### Command Line Interface
+
+```bash
+npm run scrape -- <url> -o <output>
+```
+
+Or using development mode:
+
 ```bash
 npm run dev -- <url> -o <output>
 ```
 
-Or after building:
+After building:
 
 ```bash
 node dist/cli.js <url> -o <output>
@@ -25,9 +33,10 @@ node dist/cli.js <url> -o <output>
 
 ```bash
 # Scrape AWS Solutions Architect course
-npm run dev -- https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03 -o aws-course.txt
+npm run scrape -- https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03 -o aws-course.txt
 
 # Using built version
+npm run build
 node dist/cli.js https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03 -o curriculum.txt
 ```
 
